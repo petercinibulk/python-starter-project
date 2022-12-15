@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM {{cookiecutter.base_docker_image}}
 
 ENV POETRY_VERSION=1.1.12
 

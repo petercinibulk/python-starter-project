@@ -1,4 +1,4 @@
-APP_NAME=app
+DOCKER_IMAGE_TAG={{cookiecutter.docker_image_tag}}
 PACKAGE_DIR={{cookiecutter.package_dir}}
 
 format:
