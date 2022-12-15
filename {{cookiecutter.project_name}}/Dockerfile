@@ -8,8 +8,8 @@ COPY poetry.lock pyproject.toml ./
 
 RUN poetry install --no-dev --no-interaction --no-ansi
 
-COPY ./app ./app
+COPY ./{{cookiecutter.package_dir}} ./{{cookiecutter.package_dir}}
 
 EXPOSE 5000
 
-CMD ["poetry", "run", "python", "./app/main.py" ]
+CMD ["poetry", "run", "python", "./{{cookiecutter.package_dir}}/main.py" ]

@@ -1,0 +1,5 @@
+{
+    "project_name": "default_name",
+    "python_version": "^3.8",
+    "package_dir": "src"
+}

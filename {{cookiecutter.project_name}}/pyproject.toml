@@ -1,19 +1,22 @@
 [tool.poetry]
-name = "python-starter-project"
+name = "{{cookiecutter.project_name}}"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = []
+readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "{{cookiecutter.python_version}}"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
-flake8 = "^3.9.2"
 pytest-cov = "^2.12.1"
-autoflake = "^1.4"
-black = "^21.9b0"
+ruff = "^0.0.133"
+black = "^22.10.0"
 isort = "^5.9.3"
+
+[tool.ruff]
+ignore = ["E501"]
 
 [tool.isort]
 profile = "black"
