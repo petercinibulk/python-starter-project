@@ -3,13 +3,13 @@ PACKAGE_DIR={{cookiecutter.package_dir}}
 
 format:
 	poetry run ruff $(PACKAGE_DIR) tests --fix
-	poetry run black $(PACKAGE_DIR)
-	poetry run isort $(PACKAGE_DIR)
+	poetry run black $(PACKAGE_DIR) tests
+	poetry run isort $(PACKAGE_DIR) tests
 
 lint:
 	poetry run ruff $(PACKAGE_DIR) tests
-	poetry run black $(PACKAGE_DIR)  tests --check
-	poetry run isort $(PACKAGE_DIR)  tests --check-only
+	poetry run black $(PACKAGE_DIR) tests --check
+	poetry run isort $(PACKAGE_DIR) tests --check-only
 
 test:
 	poetry run pytest --cov=$(PACKAGE_DIR) --cov-report html --cov-report term-missing
