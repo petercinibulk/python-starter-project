@@ -19,7 +19,7 @@ run:
 	poetry run python $(PACKAGE_DIR)/main.py
 
 build:
-	docker build -t $(APP_NAME) .
+	docker build -t $(DOCKER_IMAGE_TAG) .
 
 run-docker: build
-	docker run -i -t --rm $(APP_NAME)
+	docker run -i -t --rm $(DOCKER_IMAGE_TAG)

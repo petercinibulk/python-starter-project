@@ -1,7 +1,7 @@
 {
     "project_name": "default_name",
-    "python_version": "^3.8",
+    "python_version": "^3.11",
     "package_dir": "src",
-    "base_docker_image": "python:3.8-slim",
+    "base_docker_image": "python:3.11-slim",
     "docker_image_tag": "default_name"
 }

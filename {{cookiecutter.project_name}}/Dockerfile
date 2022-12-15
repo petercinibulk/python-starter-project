@@ -1,6 +1,6 @@
 FROM {{cookiecutter.base_docker_image}}
 
-ENV POETRY_VERSION=1.1.12
+ENV POETRY_VERSION=1.3.1
 
 RUN pip install "poetry==$POETRY_VERSION"
 
