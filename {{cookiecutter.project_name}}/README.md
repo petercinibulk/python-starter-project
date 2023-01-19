@@ -1,8 +1,10 @@
 # {{cookiecutter.project_name}}
 
 ```bash
-poetry env use <python3|python3.8|python3.11|etc>
-poetry install
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -e .[dev]
 ```
 
 ```bash
