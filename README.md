@@ -2,25 +2,24 @@
 
 ### Features
 - 🌎 Environment Management
-    - 🖋️ Poetry
+    - 🖋️ Venv
+    - 🐋 DevContainer
 - 🧪 Testing
     - 🧪 Pytest
-    - 🔬 Pytest-cov
+    - 🔬 Coverage
 - 🔍 Formating/Linting
     - 🦀 Ruff
     - 🖤 Black
-    - 🔠 Isort
 - 📦 Contanerization
     - 🐋 Docker
 
-### Usage
-
 ```bash
-# Install cookiecutter
-pip install cookiecutter
-```
-```bash
-# Run cookiecutter
-cookiecutter https://github.com/petercinibulk/python-starter-project
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -e .[dev,test]
 ```
 
+```bash
+make run
+```
